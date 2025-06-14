@@ -1,12 +1,22 @@
 /* LinkedIn :: @aruppatra*/
 
+/* Question Link :: https://codeforces.com/problemset/problem/2107/A*/
+
+/* approach ::
+    -> if all elements are equals then there are no solution.
+    -> if there in the array different numbers are present 
+        1. then all the max number put in the same sequeance then gcd of that swquesnces is that number itself. (mark these numbers as 1)
+        2. rest of the numbers are in another sequesnce the gcd of that sequence is never equal to another one always less. (mark these numbers as 2)    
+*/ 
+
+// Solutions :: 
 import java.io.*;
 import java.util.*;
 
 public class A2107 {
     static final int MOD = 1_000_000_007;
     static final long INF = Long.MAX_VALUE;
-
+    
     // ---------- Fast Input/Output ----------
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(System.out);
